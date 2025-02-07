@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Sans:wght@400;500;600;700&family=Ysabeau+Infant&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans';
+}
+/* 導覽列開始 */
+.navbar {
+  background-color: rgb(255, 255, 255); /* Change this to the desired color */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(27, 20, 20); /* Change this to the desired text color */
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: rgb(27, 20, 20);
+}
+#navbarNav{
+margin-right: 10rem;
+}
+.nav-item a {
+    color: white;
+    font-size: 1.2rem ;
+}
+.navbar-brand img{
+  width: 10rem;
+  height: 5rem;
+  margin-left: 4rem;
+}
+.navbar-brand h1{
+  float: right;
+  margin-top: 1.5rem;
+}
+
+/* 導覽列結束 */
+h1{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.img-fluid {
+  margin-top: 2rem;
+  height: 300px; /* 圖片高度 */
+  width: 100%; /* 圖片寬度為父容器的100% */
+  object-fit: cover; /* 保持圖片比例，覆蓋整個容器 */
+  transition: filter 0.3s ease-in-out;
+}
+.img-fluid:hover{
+  filter: brightness(80%);
+}
+.row a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.breadcrumb{
+  font-size: 1.2rem;
+  position: relative;
+  left: 2rem;
+  top: .5rem;
+}
+.breadcrumb-item a{
+  text-decoration: none;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Sans:wght@400;500;600;700&family=Ysabeau+Infant&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans';
+}
+/* 導覽列開始 */
+.navbar {
+    background-color: rgb(255, 255, 255);
+  }
+.nav-item a {
+    color: white;
+    font-size: 1.2rem ;
+}
+.navbar-brand img{
+  width: 10rem;
+  height: 5rem;
+  margin-left: 4rem;
+}
+.navbar-brand h1{
+  float: right;
+  margin-top: 1.5rem;
+}
+
+/* 導覽列結束 */
+
+h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h4{
+  font-size: 1.8rem;
+}
+h5{
+  font-size: 1.5rem;
+}
+
+/* 地圖 */
+iframe{
+    margin: 2rem auto;
+    position: relative;
+    left: 24rem;
+}
+.breadcrumb{
+  font-size: 1.2rem;
+  position: relative;
+  left: 2rem;
+  top: .5rem;
+}
+.breadcrumb-item a{
+  text-decoration: none;
+}

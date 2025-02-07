@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Sans:wght@400;500;600;700&family=Ysabeau+Infant&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans';
+}
+/* 導覽列開始 */
+.nav-item a {
+    color: white;
+    font-size: 1.2rem ;
+}
+.navbar-brand img{
+  width: 10rem;
+  height: 5rem;
+  margin-left: 4rem;
+}
+.navbar-brand h1{
+  float: right;
+  margin-top: 1.5rem;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255); /* Change this to the desired color */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(27, 20, 20); /* Change this to the desired text color */
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: rgb(27, 20, 20);
+}
+#navbarNav{
+margin-right: 10rem;
+}
+
+/* 導覽列結束 */
+.carousel-item img {
+  display: block;
+  margin: 0 auto; /* 设置左右边距为 auto，将图片水平居中 */
+}
+
+
+/* 卡片開始 */
+.card{
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card-img-top{
+  border-radius: 15px;
+  padding: 15px;
+}
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
+}
+.btn-primary{
+  background-color: #989898; /* 按鈕背景色 */
+  border-radius: 10px;/* 按鈕圓角 */
+  border: 1px transparent; /* 按鈕邊框透明 */
+}
+.btn-primary:hover{
+  background-color: black;
+}
+
+/* 公司簡介開始 */
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+}
+.textbox {
+  flex: 1; /* Occupy remaining space */
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 5px; /* Add padding for better readability */
+}
+
+@media (max-width: 844px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+  }
+  .textbox {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    float: none;
+  }
+  .textbox {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+}

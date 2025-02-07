@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Sans:wght@400;500;600;700&family=Ysabeau+Infant&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans';
+}
+/* 導覽列開始 */
+.navbar {
+    background-color: rgb(255, 255, 255);
+  }
+.nav-item a {
+    color: white;
+    font-size: 1.2rem ;
+}
+.navbar-brand img{
+  width: 10rem;
+  height: 5rem;
+  margin-left: 4rem;
+}
+.navbar-brand h1{
+  float: right;
+  margin-top: 1.5rem;
+}
+
+
+.navbar-nav .nav-link {
+    color: rgb(27, 20, 20); /* 變更此處以設置所需的文字顏色 */
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: rgb(27, 20, 20);
+}
+#navbarNav{
+  margin-right: 10rem;
+  }
+
+
+/* 導覽列結束 */
+
+h1{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-photo img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.thumbnail-container {
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* 隱藏超出容器的內容 */
+  display: flex; /* 將子元素排列成一行 */
+  transition: transform 0.5s ease; /* 添加轉場效果 */
+}
+
+.thumbnail {
+  width: 100px; /* 調整縮圖大小 */
+  height: 100px; /* 設置一致的高度 */
+  object-fit: cover; /* 確保圖像填滿整個容器 */
+  margin: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* 添加過渡效果 */
+  border: 2px solid transparent; /* 初始邊框 */
+  border-radius: 10px;
+  display: none; /* 初始隱藏所有縮略圖 */
+}
+
+/* 滑鼠懸停時改變邊框顏色 */
+.thumbnail:hover {
+  border-color: #333;
+}
+
+.main-photo img {
+  width: 80%; /* 使大圖適應容器寬度 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 調整按鈕樣式 */
+#prevBtn {
+  position: absolute;
+  top: 50%; /* 將按鈕垂直置中 */
+  transform: translateY(-50%);
+  left: 10px; /* 將按鈕置於左側，調整位置 */
+  z-index: 1;
+  background-color: #6c757d; /* 按鈕背景顏色 */
+  border-color: #6c757d; /* 按鈕邊框顏色 */
+  font-weight: bolder;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 80%; /* 將按鈕垂直置中 */
+  transform: translateY(-50%);
+  right: 10px; /* 將按鈕置於右側，調整位置 */
+  z-index: 1;
+  background-color: #6c757d; /* 按鈕背景顏色 */
+  border-color: #6c757d; /* 按鈕邊框顏色 */
+  font-weight: bolder;
+}
+
+/* 滑鼠懸停時修改按鈕顏色 */
+#prevBtn:hover,
+#nextBtn:hover {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 51rem;
+  left: 12rem;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 51rem;
+  right: 12rem;
+}
+.breadcrumb{
+  font-size: 1.2rem;
+  position: relative;
+  left: 2rem;
+  top: .5rem;
+}
+.breadcrumb-item a{
+  text-decoration: none;
+}
